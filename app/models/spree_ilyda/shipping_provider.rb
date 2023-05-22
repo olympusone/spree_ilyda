@@ -1,7 +1,7 @@
 module SpreeIlyda
   class ShippingProvider < SpreeIlyda::DatabaseBase
-    self.table_name = 'set_shipping_providers'
+    self.table_name = :set_shipping_providers
 
-    belongs_to :order,  foreign_key: "shippingprovider_id"
+    has_many :orders, foreign_key: :shippingprovider_id
   end
 end
