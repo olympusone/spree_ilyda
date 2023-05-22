@@ -1,5 +1,5 @@
 module SpreeIlyda
-  class HelperCountry < SpreeIlyda::DatabaseBase
+  class Country < SpreeIlyda::DatabaseBase
     self.table_name = 'helper_country'
   end
 end
