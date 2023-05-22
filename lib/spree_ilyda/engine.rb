@@ -10,7 +10,8 @@ module SpreeIlyda
     end
     
     initializer 'spree_ilyda.environment', before: :load_config_initializers do |_app|
-      SpreeIlyda::Config = SpreeIlyda::Configuration.new
+      # ! TODO undefined?
+      # SpreeIlyda::Config = SpreeIlyda::Configuration.new
     end
 
     def self.activate
